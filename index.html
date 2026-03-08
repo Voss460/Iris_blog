@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Wilson's Personal Blog</title>
+    <link rel="stylesheet" href="Blog1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Allura&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ✦ Sparkle cursor canvas -->
+    <canvas id="sparkle-canvas"></canvas>
+
+    <header>
+        <img src="assets/pink bow.gif" alt="pink bow">
+        <h1><i><b> Iris Wilson's Personal Blog </b></i></h1>
+        <img src="assets/pink bow.gif" alt="pink bow">
+    </header>
+
+    <!-- ✦ Marquee bar — classic Y2K! -->
+    <div class="marquee-bar">
+        <marquee behavior="scroll" direction="left" scrollamount="3">
+            ✿ Welcome to my little corner of the internet ✿ &nbsp;&nbsp;&nbsp;
+            ♡ Currently compiling the newest adventure of the Great Sherlock Holmes ♡ &nbsp;&nbsp;&nbsp;
+            ✦ This site is best viewed at 1024×768 ✦ &nbsp;&nbsp;&nbsp;
+            ☆ Leave a message in my guestbook! ☆ &nbsp;&nbsp;&nbsp;
+            ✿ Huggys &amp; roses to all my visitors ✿ &nbsp;&nbsp;&nbsp;
+        </marquee>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <div class="layout">
+        <!-- ════════════════ SIDEBAR ════════════════ -->
+        <aside class="left">
+
+            <!-- Profile -->
+            <section class="profile">
+                <div class="avatar"></div>
+                <h2>Iris Wilson</h2>
+            </section>
+
+            <div class="lace-strip">
+                <img src="assets/lace.gif" alt="">
+                <img src="assets/pinkhearts.gif" alt="">
+            </div>
+
+            <!-- Navigation -->
+            <nav class="links">
+                <ul>
+                    <li class="welcome"><b>✿ WELCOME! ✿</b></li>
+                    <li class="divider"><img src="assets/roses.gif" alt=""></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Writing</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+
+            <!-- ✦ Current Mood & Now Playing -->
+            <div class="widget mood-widget">
+                <div class="widget-title">✦ current status ✦</div>
+                <div class="widget-body">
+                    <div class="status-row">
+                        <span class="status-label">mood:</span>
+                        <span class="status-value">🌸 Fluffy</span>
+                    </div>
+                    <div class="status-row">
+                        <span class="status-label">doing:</span>
+                        <span class="status-value">📖 Writing</span>
+                    </div>
+                    <div class="status-row">
+                        <span class="status-label">♪ now playing:</span>
+                    </div>
+                    <div class="now-playing">
+                        <span class="note-anim">♪</span>
+                        <marquee behavior="scroll" direction="left" scrollamount="2" class="song-marquee">
+                            221B Baker Street — Yasumasa Kitagawa
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✦ Blinkies -->
+            <div class="widget blinkies-widget">
+                <div class="widget-title">✦ blinkies ✦</div>
+                <div class="blinkie-grid">
+                    <div class="blinkie b1">Biographer</div>
+                    <div class="blinkie b2">Physician</div>
+                    <div class="blinkie b3">Apothecary</div>
+                    <div class="blinkie b4">Tea Time</div>
+                    <div class="blinkie b5">Mystery ♡</div>
+                    <div class="blinkie b6">Cat Lover</div>
+                </div>
+            </div>
+
+            <!-- ✦ Hit Counter -->
+            <div class="widget counter-widget">
+                <div class="widget-title">✦ visitors ✦</div>
+                <div class="hit-counter">
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                    <span class="digit">1</span>
+                    <span class="digit">8</span>
+                    <span class="digit">8</span>
+                    <span class="digit">7</span>
+                </div>
+                <div class="counter-sub">since jan 2025 ♡</div>
+            </div>
+
+            <!-- ✦ Friend Links / Web Ring -->
+            <div class="widget friends-widget">
+                <div class="widget-title">✦ friend sites ✦</div>
+                <ul class="friend-list">
+                    <li><a href="#">🌟 Runo's Office</a></li>
+                    <li><a href="#">📗 Sussy's Notebook</a></li>
+                    <li><a href="#">🌹 Rose Garden</a></li>
+                    <li><a href="#">☕ Holmes's Laboratory</a></li>
+                    <li><a href="#">🎀 Gina's Tricks</a></li>
+                </ul>
+                <div class="webring">
+                    <a href="#">← prev</a>
+                    <span>web ring</span>
+                    <a href="#">next →</a>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- ════════════════ MAIN CONTENT ════════════════ -->
+        <main class="right">
+
+            <!-- Post 1 -->
+            <article class="post">
+                <div class="divider-top"></div>
+                <div class="post-meta">♡ posted on june 14, 2025 &nbsp;|&nbsp; writing &nbsp;|&nbsp; 3 comments ♡</div>
+                <h2><b>New typewriter awaiting command!</b></h2>
+                <div class="post-body">
+                    <div class="post-text">
+                        <p>Because I wished to attempt something rather old-fashioned, I asked Hurley to help me procure a typewriter from the Victorian age. It feels ever so different from the keys of a modern computer—how curious and delightful it is to tap upon! I cannot help but wonder what sort of adventures might appear upon the page if one were to compose the tales of a great detective upon such a marvellous machine. The very thought makes me quite giddy with anticipation!</p>
+                        <p>Perhaps I ought to write a story in which a great detective of the 21st century, together with his faithful colleague, finds himself carried back to the splendid British Empire of the Victorian age—wandering through misty streets and narrow lanes paved with old stone, and there, in that former world so bright with glory, continuing to practise justice in his own noble way?</p>
+                    </div>
+                    <div class="post-photos">
+                        <img class="post-photo" src="pics/typewriter.jpg" alt="typewriter">
+                        <img class="post-photo" src="pics/london_train.jpg" alt="train">
+                    </div>
+                </div>
+                <div class="post-tags">tags: <a href="#">writing</a> · <a href="#">victorian</a> · <a href="#">mystery</a></div>
+                <div class="divider-bottom"></div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post">
+                <div class="divider-top"></div>
+                <div class="post-meta">♡ posted on june 3, 2025 &nbsp;|&nbsp; daily life &nbsp;|&nbsp; 5 comments ♡</div>
+                <h2><b>Pray, Do Come and Say Hello to Waggy!</b></h2>
+                <div class="post-body">
+                    <div class="post-text">
+                        <p>By a curious turn of fortune, we have begun keeping a cat from today onward! Waggy belongs to a dear friend of ours from Japan. The little creature is most well-behaved and sensible—and quite exceedingly adorable besides! Every morning it wakes me by gently nudging me with its soft, fluffy head, and after such a beginning it is quite impossible to feel cross for the rest of the day. No wonder our Japanese friend insists on keeping cats, even when he says he can scarcely afford his meals!</p>
+                        <p>I have been wondering whether there might be some opportunity to write Waggy into a story. Perhaps it might become a clever assistant in one of the great detective’s cases! Though… if the great detective should happen to be allergic to cat fur, I fear matters might become rather troublesome indeed…</p>
+                    </div>
+                    <div class="post-photos">
+                        <img class="post-photo" src="pics/Waggy.jpg" alt="Waggy">
+                    </div>
+                </div>
+                <div class="post-tags">tags: <a href="#">daily life</a> · <a href="#">cat</a> · <a href="#">cutie</a></div>
+                <div class="divider-bottom"></div>
+            </article>
+
+            <!-- ✦ Guestbook -->
+            <section class="guestbook">
+                <div class="divider-top"></div>
+                <h2 class="guestbook-title">✦ Guestbook ✦</h2>
+                <p class="guestbook-sub">Leave a message for Iris! ♡</p>
+
+                <!-- Existing messages -->
+                <div class="gb-messages">
+                    <div class="gb-msg">
+                        <div class="gb-msg-header">
+                            <span class="gb-name">🔍 S.H</span>
+                            <span class="gb-date">march 8, 2026</span>
+                        </div>
+                        <p>My dearest young lady, you shall spoil Waggy most terribly! </p>
+                    </div>
+                    <div class="gb-msg">
+                        <div class="gb-msg-header">
+                            <span class="gb-name">🐭 Naruhodo</span>
+                            <span class="gb-date">march 8, 2026</span>
+                        </div>
+                        <p>コメントしたいけど、何を書けばいいかわからない…</p>
+                    </div>
+                </div>
+
+                <!-- Sign guestbook form -->
+                <div class="gb-form">
+                    <div class="gb-form-title">✍ sign my guestbook</div>
+                    <input type="text" placeholder="your name" class="gb-input" id="gb-name">
+                    <textarea placeholder="leave a message ♡" class="gb-textarea" id="gb-message" rows="3"></textarea>
+                    <button class="gb-submit" onclick="addGuestbookEntry()">✦ post ✦</button>
+                </div>
+                <div class="divider-bottom"></div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- ✦ Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span>✿ Iris wilson's personal blog ✿ made with love &amp; florae ✿</span>
+            <span>best viewed at 1024×768 · IE 6.0+ · ♡</span>
+        </div>
+    </footer>
+
+    <script src="Blog1.js"></script>
+</body>
+</html>
