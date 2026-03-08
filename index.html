@@ -13,7 +13,9 @@
 
     <!-- ✦ Sparkle cursor canvas -->
     <canvas id="sparkle-canvas"></canvas>
-
+    <audio id="bg-music" loop>
+        <source src="music/221b Baker Street.m4a" type="audio/mp4">
+    </audio>
     <header>
         <img src="assets/pink bow.gif" alt="pink bow">
         <h1><i><b> Iris Wilson's Personal Blog </b></i></h1>
@@ -77,10 +79,13 @@
                         <span class="status-label">♪ now playing:</span>
                     </div>
                     <div class="now-playing">
-                        <span class="note-anim">♪</span>
-                        <marquee behavior="scroll" direction="left" scrollamount="2" class="song-marquee">
-                            221B Baker Street — Yasumasa Kitagawa
-                        </marquee>
+                        <span class="note-anim" id="music-btn" 
+                            onclick="toggleMusic()" 
+                            style="cursor:pointer; font-size:18px;" 
+                            title="play / pause">♪</span>
+                        <div class="song-scroll-wrap">
+                            <span id="song-title">click ♪ to play</span>
+                        </div>
                     </div>
                 </div>
             </div>

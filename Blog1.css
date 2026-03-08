@@ -267,6 +267,22 @@ header h1 {
     font-size: 13px;
 }
 
+.song-scroll-wrap {
+    overflow: hidden;
+    flex: 1;
+}
+
+#song-title {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
 .note-anim {
     color: #d46a84;
     animation: bounce-note 0.8s ease-in-out infinite alternate;
