@@ -98,7 +98,7 @@
     animate();
 })();
 
-// ── 音乐播放器 ──────────────────────────────
+// ── music player ──────────────────────────────
 const playlist = [
     { file: "music/221b Baker Street.m4a", title: "ベーカー街221B — 北川保昌" },
     { file: "music/Iris Wilson.m4a", title: "アイリス・ワトソン ~小さな伝記作家 — 北川保昌" },
@@ -116,7 +116,6 @@ function loadSong(index) {
 }
 
 function playNextRandom() {
-    // 随机选一首，保证不重复播放同一首
     let next;
     do {
         next = Math.floor(Math.random() * playlist.length);
@@ -126,7 +125,6 @@ function playNextRandom() {
     music.play();
 }
 
-// 一首播完之后自动随机切换下一首
 music.addEventListener("ended", () => {
     playNextRandom();
 });
@@ -141,7 +139,6 @@ function toggleMusic() {
         btn.textContent = "♪";
     }
 }
-// 页面加载完成后，随机选一首准备好（等用户点击触发）
 loadSong(currentIndex);
 
 
