@@ -192,3 +192,14 @@ function escapeHtml(str) {
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;");
 }
+
+function toggleTranslation(btn) {
+    const box = btn.nextElementSibling; // 紧跟在按钮后面的 .translated-text
+    if (box.classList.contains("visible")) {
+        box.classList.remove("visible");
+        btn.textContent = "🌐 翻译成中文";
+    } else {
+        box.classList.add("visible");
+        btn.textContent = "🌐 收起翻译";
+    }
+}
