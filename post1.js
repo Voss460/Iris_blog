@@ -41,7 +41,7 @@ function renderComments(comments) {
         div.className = "gb-msg";
         div.innerHTML = `
             <div class="gb-msg-header">
-                <span class="gb-name">🌸 ${escapeHtml(c.name)}</span>
+                <span class="gb-name">${randomEmoji(c.id)} ${escapeHtml(c.name)}</span>
                 <span class="gb-date">${date}</span>
             </div>
             <p>${escapeHtml(c.message)}</p>
@@ -51,6 +51,11 @@ function renderComments(comments) {
 }
 
 // ── 提交新评论 ──────────────────────────────
+function randomEmoji(id) {
+    const emojis = ['🌸', '🎀', '🧸', '🫖', '✨', '💗'];
+    return emojis[id % emojis.length];
+}
+
 async function addComment() {
     const nameInput = document.getElementById("c-name");
     const msgInput  = document.getElementById("c-message");
