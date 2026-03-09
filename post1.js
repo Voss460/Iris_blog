@@ -51,11 +51,6 @@ function renderComments(comments) {
 }
 
 // ── 提交新评论 ──────────────────────────────
-function randomEmoji(id) {
-    const emojis = ['🌸', '🎀', '🧸', '🫖', '✨', '💗'];
-    return emojis[id % emojis.length];
-}
-
 async function addComment() {
     const nameInput = document.getElementById("c-name");
     const msgInput  = document.getElementById("c-message");
@@ -95,6 +90,12 @@ async function addComment() {
     } else {
         alert("Something went wrong, please try again ♡");
     }
+}
+
+// ── 固定 emoji（按 id 决定）────────────────
+function randomEmoji(id) {
+    const emojis = ["🌸", "🎀", "🧸", "🫖", "✨", "💗"];
+    return emojis[id % emojis.length];
 }
 
 // ── escapeHtml（防止XSS）──────────────────
