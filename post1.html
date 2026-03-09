@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New typewriter awaiting command! — Iris Wilson's Blog</title>
+    <link rel="stylesheet" href="Blog1.css">
+    <link rel="stylesheet" href="post1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Allura&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="sparkle-canvas"></canvas>
+    <audio id="bg-music" loop>
+        <source src="music/221b Baker Street.m4a" type="audio/mp4">
+    </audio>
+
+    <header>
+        <img src="assets/pink bow.gif" alt="pink bow">
+        <h1><i><b> Iris Wilson's Personal Blog </b></i></h1>
+        <img src="assets/pink bow.gif" alt="pink bow">
+    </header>
+
+    <div class="marquee-bar">
+        <marquee behavior="scroll" direction="left" scrollamount="3">
+            ✿ Welcome to my little corner of the internet ✿ &nbsp;&nbsp;&nbsp;
+            ♡ Currently compiling the newest adventure of the Great Sherlock Holmes ♡ &nbsp;&nbsp;&nbsp;
+            ✦ This site is best viewed at 1024×768 ✦ &nbsp;&nbsp;&nbsp;
+            ☆ Leave a message below! ☆ &nbsp;&nbsp;&nbsp;
+            ✿ Huggys &amp; roses to all my visitors ✿ &nbsp;&nbsp;&nbsp;
+        </marquee>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <div class="layout">
+
+        <!-- ════════════════ SIDEBAR ════════════════ -->
+        <aside class="left">
+            <section class="profile">
+                <div class="avatar"></div>
+                <h2>Iris Wilson</h2>
+            </section>
+
+            <div class="lace-strip">
+                <img src="assets/lace.gif" alt="">
+                <img src="assets/pinkhearts.gif" alt="">
+            </div>
+
+            <nav class="links">
+                <ul>
+                    <li class="welcome"><b>✿ WELCOME! ✿</b></li>
+                    <li class="divider"><img src="assets/roses.gif" alt=""></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Writing</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="widget mood-widget">
+                <div class="widget-title">✦ current status ✦</div>
+                <div class="widget-body">
+                    <div class="status-row">
+                        <span class="status-label">mood:</span>
+                        <span class="status-value">🌸 Fluffy</span>
+                    </div>
+                    <div class="status-row">
+                        <span class="status-label">doing:</span>
+                        <span class="status-value">📖 Writing</span>
+                    </div>
+                    <div class="status-row">
+                        <span class="status-label">♪ now playing:</span>
+                    </div>
+                    <div class="now-playing">
+                        <span class="note-anim" id="music-btn"
+                            onclick="toggleMusic()"
+                            style="cursor:pointer; font-size:18px;"
+                            title="play / pause">♪</span>
+                        <div class="song-scroll-wrap">
+                            <span id="song-title">click ♪ to play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget blinkies-widget">
+                <div class="widget-title">✦ blinkies ✦</div>
+                <div class="blinkie-grid">
+                    <div class="blinkie b1">Biographer</div>
+                    <div class="blinkie b2">Physician</div>
+                    <div class="blinkie b3">Apothecary</div>
+                    <div class="blinkie b4">Tea Time</div>
+                    <div class="blinkie b5">Mystery ♡</div>
+                    <div class="blinkie b6">Cat Lover</div>
+                </div>
+            </div>
+
+            <div class="widget counter-widget">
+                <div class="widget-title">✦ visitors ✦</div>
+                <div class="hit-counter">
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                    <span class="digit">1</span>
+                    <span class="digit">8</span>
+                    <span class="digit">8</span>
+                    <span class="digit">7</span>
+                </div>
+                <div class="counter-sub">since jan 2025 ♡</div>
+            </div>
+
+            <div class="widget friends-widget">
+                <div class="widget-title">✦ friend sites ✦</div>
+                <ul class="friend-list">
+                    <li><a href="#">🌟 Runo's Office</a></li>
+                    <li><a href="#">📗 Sussy's Notebook</a></li>
+                    <li><a href="#">🌹 Rose Garden</a></li>
+                    <li><a href="#">☕ Holmes's Laboratory</a></li>
+                    <li><a href="#">🎀 Gina's Tricks</a></li>
+                </ul>
+                <div class="webring">
+                    <a href="#">← prev</a>
+                    <span>web ring</span>
+                    <a href="#">next →</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ════════════════ MAIN CONTENT ════════════════ -->
+        <main class="right">
+
+            <!-- 返回按钮 -->
+            <a href="index.html" class="back-btn">← back to home</a>
+
+            <!-- 博文完整正文 -->
+            <article class="post post-detail">
+                <div class="divider-top"></div>
+                <div class="post-meta">♡ posted on june 14, 2025 &nbsp;|&nbsp; writing &nbsp;|&nbsp; tags: <a href="#">victorian</a> · <a href="#">mystery</a> ♡</div>
+                <h2><b>New typewriter awaiting command!</b></h2>
+
+                <div class="post-body">
+                    <div class="post-text">
+                        <p>Because I wished to attempt something rather old-fashioned, I asked Hurley to help me procure a typewriter from the Victorian age. It feels ever so different from the keys of a modern computer—how curious and delightful it is to tap upon! I cannot help but wonder what sort of adventures might appear upon the page if one were to compose the tales of a great detective upon such a marvellous machine. The very thought makes me quite giddy with anticipation!</p>
+                        <p>Perhaps I ought to write a story in which a great detective of the 21st century, together with his faithful colleague, finds himself carried back to the splendid British Empire of the Victorian age—wandering through misty streets and narrow lanes paved with old stone, and there, in that former world so bright with glory, continuing to practise justice in his own noble way?</p>
+                    </div>
+                    <div class="post-photos">
+                        <img class="post-photo" src="pics/typewriter.jpg" alt="typewriter">
+                        <img class="post-photo" src="pics/london_train.jpg" alt="train">
+                    </div>
+                </div>
+
+                <button class="translate-btn" onclick="toggleTranslation(this)">🌐 翻译成中文</button>
+                <div class="translated-text">
+                    <p>因为想尝试一些复古的操作，所以拜托Hurley帮我买来了维多利亚时期的打字机。手感和电脑键盘完全不一样，实在是太有意思了！如果用这样的机器编写大侦探的故事，会敲打出什么样的冒险呢？我真的好期待好期待呢！</p>
+                    <p>嗯……要不要写一个让2000s的大侦探和他的助手回到维多利亚时代的日不落帝国，穿梭于迷雾和狭窄的石砖巷子里，在昔日的、光辉万丈的世界践行自己正义的故事呢？</p>
+                </div>
+
+                <div class="divider-bottom"></div>
+            </article>
+
+            <!-- ════ 评论区 ════ -->
+            <section class="guestbook post-comments">
+                <div class="divider-top"></div>
+                <h2 class="guestbook-title">✦ Comments ✦</h2>
+                <p class="guestbook-sub">leave a thought on this post ♡</p>
+
+                <!-- 评论列表（从 localStorage 读取） -->
+                <div class="gb-messages" id="comment-list"></div>
+
+                <!-- 发表评论表单 -->
+                <div class="gb-form">
+                    <div class="gb-form-title">✍ leave a comment</div>
+                    <input type="text" placeholder="your name" class="gb-input" id="c-name">
+                    <textarea placeholder="your thoughts ♡" class="gb-textarea" id="c-message" rows="3"></textarea>
+                    <button class="gb-submit" onclick="addComment()">✦ post ✦</button>
+                </div>
+                <div class="divider-bottom"></div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span>✿ Iris wilson's personal blog ✿ made with love &amp; florae ✿</span>
+            <span>best viewed at 1024×768 · IE 6.0+ · ♡</span>
+        </div>
+    </footer>
+
+    <script src="Blog1.js"></script>
+    <script src="post1.js"></script>
+</body>
+</html>

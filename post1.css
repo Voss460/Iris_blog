@@ -1,0 +1,42 @@
+/* ═══════════════════════════════════════════
+   post1.css — 详情页专用样式
+   ═══════════════════════════════════════════ */
+
+/* ── 返回按钮 ── */
+.back-btn {
+    display: inline-block;
+    font-family: "Alegreya", serif;
+    font-size: 15px;
+    color: #b9235f;
+    text-decoration: none;
+    background: #fce8ef;
+    border: 1px dashed #e0a0b5;
+    border-radius: 20px;
+    padding: 5px 18px;
+    transition: background 0.2s, transform 0.15s;
+    align-self: flex-start;   /* 不要撑满整行 */
+}
+.back-btn:hover {
+    background: #f9d0de;
+    transform: translateX(-3px);
+}
+
+/* ── 详情页博文：正文字号稍大，图片更宽 ── */
+.post-detail .post-text p {
+    font-size: 22px;
+    line-height: 1.65;
+}
+
+/* ── 评论区 ── */
+.post-comments {
+    /* 复用 .guestbook 的所有样式，这里只做微调 */
+}
+
+/* 暂无评论提示 */
+.no-comments {
+    text-align: center;
+    color: #c05a7a;
+    font-style: italic;
+    font-size: 15px;
+    padding: 16px 0;
+}
