@@ -3,7 +3,6 @@
    ═══════════════════════════════════════════ */
 
 /* ── Custom Fonts ── */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
 @font-face {
     font-family: "Header";
     src: url("font/cute/cute-Peronal Use.ttf") format("truetype");
