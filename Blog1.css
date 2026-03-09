@@ -3,6 +3,7 @@
    ═══════════════════════════════════════════ */
 
 /* ── Custom Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
 @font-face {
     font-family: "Header";
     src: url("font/cute/cute-Peronal Use.ttf") format("truetype");
@@ -712,3 +713,36 @@ header h1 {
 }
 
 .translated-text.visible { display: block; }
+/* ── 博文预览限高 ────────────────────────── */
+.post-preview {
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+}
+.post-preview::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, #fff5f8);
+    pointer-events: none;
+}
+
+/* ── 查看详情按钮 ────────────────────────── */
+.detail-btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-family: "Alegreya", serif;
+    font-size: 15px;
+    color: #c94a64;
+    text-decoration: none;
+    border-bottom: 1px dashed #e0a0b5;
+    transition: color 0.2s;
+}
+.detail-btn:hover {
+    color: #a03050;
+    border-bottom-color: #c94a64;
+}
