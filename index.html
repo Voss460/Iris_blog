@@ -139,10 +139,28 @@
         <!-- ════════════════ MAIN CONTENT ════════════════ -->
         <main class="right">
 
+            <script>
+            async function updateCommentCount() {
+                const res = await fetch(
+                    'https://ajyirdyzsgkgycpiryrx.supabase.co/rest/v1/comments?select=id',
+                    {
+                        headers: {
+                            'apikey': 'sb_publishable_bXZ9FlACnc9w_na-udD0Fg_0ozs_9Kb',
+                            'Authorization': 'Bearer sb_publishable_bXZ9FlACnc9w_na-udD0Fg_0ozs_9Kb'
+                        }
+                    }
+                );
+                const data = await res.json();
+                const el = document.getElementById('comment-count');
+                if (el && data) el.textContent = data.length;
+            }
+            updateCommentCount();
+            </script>
+
             <!-- Post 1 -->
             <article class="post post-clickable" onclick="window.location='post1.html'">
                 <div class="divider-top"></div>
-                <div class="post-meta">♡ posted on march 20, 2026 &nbsp;|&nbsp; teatime &nbsp;|&nbsp; 3 comments ♡</div>
+                <div class="post-meta">♡ posted on march 20, 2026 &nbsp;|&nbsp; teatime &nbsp;|&nbsp; <span id="comment-count">3</span> comments ♡</div>
                 <h2><b>Welcome to 2026 Guangzhou TGAA Tea Party! 欢迎来到2026广州大逆转裁判茶话会！</b></h2>
                 <div class="post-body">
                     <div class="post-text">
