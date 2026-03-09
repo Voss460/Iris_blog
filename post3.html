@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pray, Do Come and Say Hello to Waggy! — Iris Wilson's Blog</title>
+    <link rel="stylesheet" href="Blog1.css">
+    <link rel="stylesheet" href="post1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Allura&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="sparkle-canvas"></canvas>
+    <audio id="bg-music" loop>
+        <source src="music/221b Baker Street.m4a" type="audio/mp4">
+    </audio>
+
+    <header>
+        <img src="assets/pink bow.gif" alt="pink bow">
+        <h1><i><b> Iris Wilson's Personal Blog </b></i></h1>
+        <img src="assets/pink bow.gif" alt="pink bow">
+    </header>
+
+    <div class="marquee-bar">
+        <marquee behavior="scroll" direction="left" scrollamount="3">
+            ✿ Welcome to my little corner of the internet ✿ &nbsp;&nbsp;&nbsp;
+            ♡ Currently compiling the newest adventure of the Great Sherlock Holmes ♡ &nbsp;&nbsp;&nbsp;
+            ✦ This site is best viewed at 1024×768 ✦ &nbsp;&nbsp;&nbsp;
+            ☆ Leave a message below! ☆ &nbsp;&nbsp;&nbsp;
+            ✿ Huggys &amp; roses to all my visitors ✿ &nbsp;&nbsp;&nbsp;
+        </marquee>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <div class="layout">
+
+        <!-- ════════════════ SIDEBAR ════════════════ -->
+        <aside class="left">
+            <section class="profile">
+                <div class="avatar"></div>
+                <h2>Iris Wilson</h2>
+            </section>
+
+            <div class="lace-strip">
+                <img src="assets/lace.gif" alt="">
+                <img src="assets/pinkhearts.gif" alt="">
+            </div>
+
+            <nav class="links">
+                <ul>
+                    <li class="welcome"><b>✿ WELCOME! ✿</b></li>
+                    <li class="divider"><img src="assets/roses.gif" alt=""></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Writing</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="widget mood-widget">
+                <div class="widget-title">✦ current status ✦</div>
+                <div class="widget-body">
+                    <div class="status-row">
+                        <span class="status-label">mood:</span>
+                        <span class="status-value">🌸 Fluffy</span>
+                    </div>
+                    <div class="status-row">
+                        <span class="status-label">doing:</span>
+                        <span class="status-value">📖 Writing</span>
+                    </div>
+                    <div class="status-row">
+                        <span class="status-label">♪ now playing:</span>
+                    </div>
+                    <div class="now-playing">
+                        <span class="note-anim" id="music-btn"
+                            onclick="toggleMusic()"
+                            style="cursor:pointer; font-size:18px;"
+                            title="play / pause">♪</span>
+                        <div class="song-scroll-wrap">
+                            <span id="song-title">click ♪ to play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget blinkies-widget">
+                <div class="widget-title">✦ blinkies ✦</div>
+                <div class="blinkie-grid">
+                    <div class="blinkie b1">Biographer</div>
+                    <div class="blinkie b2">Physician</div>
+                    <div class="blinkie b3">Apothecary</div>
+                    <div class="blinkie b4">Tea Time</div>
+                    <div class="blinkie b5">Mystery ♡</div>
+                    <div class="blinkie b6">Cat Lover</div>
+                </div>
+            </div>
+
+            <div class="widget counter-widget">
+                <div class="widget-title">✦ visitors ✦</div>
+                <div class="hit-counter">
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                    <span class="digit">1</span>
+                    <span class="digit">8</span>
+                    <span class="digit">8</span>
+                    <span class="digit">7</span>
+                </div>
+                <div class="counter-sub">since jan 2025 ♡</div>
+            </div>
+
+            <div class="widget friends-widget">
+                <div class="widget-title">✦ friend sites ✦</div>
+                <ul class="friend-list">
+                    <li><a href="#">🌟 Runo's Office</a></li>
+                    <li><a href="#">📗 Sussy's Notebook</a></li>
+                    <li><a href="#">🌹 Rose Garden</a></li>
+                    <li><a href="#">☕ Holmes's Laboratory</a></li>
+                    <li><a href="#">🎀 Gina's Tricks</a></li>
+                </ul>
+                <div class="webring">
+                    <a href="#">← prev</a>
+                    <span>web ring</span>
+                    <a href="#">next →</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ════════════════ MAIN CONTENT ════════════════ -->
+        <main class="right">
+
+            <a href="index.html" class="back-btn">← back to home</a>
+
+            <article class="post post-detail">
+                <div class="divider-top"></div>
+                <div class="post-meta">♡ posted on june 3, 2025 &nbsp;|&nbsp; daily life &nbsp;|&nbsp; tags: <a href="#">daily life</a> · <a href="#">cat</a> · <a href="#">cutie</a> ♡</div>
+                <h2><b>Pray, Do Come and Say Hello to Waggy!</b></h2>
+
+                <div class="post-body">
+                    <div class="post-text">
+                        <p>By a curious turn of fortune, we have begun keeping a cat from today onward! Waggy belongs to a dear friend of ours from Japan. The little creature is most well-behaved and sensible—and quite exceedingly adorable besides! Every morning it wakes me by gently nudging me with its soft, fluffy head, and after such a beginning it is quite impossible to feel cross for the rest of the day. No wonder our Japanese friend insists on keeping cats, even when he says he can scarcely afford his meals!</p>
+                        <p>I have been wondering whether there might be some opportunity to write Waggy into a story. Perhaps it might become a clever assistant in one of the great detective's cases! Though… if the great detective should happen to be allergic to cat fur, I fear matters might become rather troublesome indeed…</p>
+                    </div>
+                    <div class="post-photos">
+                        <img class="post-photo" src="pics/Waggy.jpg" alt="Waggy">
+                    </div>
+                </div>
+
+                <button class="translate-btn" onclick="toggleTranslation(this)">🌐 翻译成中文</button>
+                <div class="translated-text">
+                    <p>因为一些原因，我们今天开始养猫了！吾辈是我们一位日本朋友的猫咪。它很听话、很有礼貌，而且非常非常可爱！每天早晨被它用毛茸茸的脑袋蹭醒之后，一整天就都不会有坏心情了。难怪我们的日本朋友就算自己要吃不起饭了，也要养猫咪呢！</p>
+                    <p>我正在思考把吾辈写进故事里的事情。要不要让它成为某起案件中，大侦探的聪明助手呢？不过，如果那个名侦探正好猫毛过敏的话，事情恐怕会变得不太妙呢……</p>
+                </div>
+
+                <div class="post-tags">tags: <a href="#">daily life</a> · <a href="#">cat</a> · <a href="#">cutie</a></div>
+                <div class="divider-bottom"></div>
+            </article>
+
+
+            <!-- ════ 评论区 ════ -->
+            <section class="guestbook post-comments">
+                <div class="divider-top"></div>
+                <h2 class="guestbook-title">✦ Comments ✦</h2>
+                <p class="guestbook-sub">leave a thought on this post ♡</p>
+
+                <div class="gb-messages" id="comment-list">
+                    <div class="gb-msg">
+                        <div class="gb-msg-header">
+                            <span class="gb-name">🐭 Naruhodo</span>
+                            <span class="gb-date">march 11, 2026</span>
+                        </div>
+                        <p>懐いてくれるのは嬉しいですけど、朝早く起こされるのは……ちょっと甘い苦しみですね……</p>
+                        <button class="translate-btn" onclick="toggleTranslation(this)">🌐 翻译成中文</button>
+                        <div class="translated-text">
+                            <p>虽说亲近人很好啦，不过清晨的时候会把人叫起来真是一种甜蜜的痛苦…</p>
+                        </div>
+                    </div>
+                    <div class="gb-msg">
+                        <div class="gb-msg-header">
+                            <span class="gb-name">🌸 Susato M</span>
+                            <span class="gb-date">march 11, 2026</span>
+                        </div>
+                        <p>漱石様の残してくださった猫は、そのあまりにも愛らしい姿に、誰もが抗えなくなってしまいますね……。</p>
+                        <button class="translate-btn" onclick="toggleTranslation(this)">🌐 翻译成中文</button>
+                        <div class="translated-text">
+                            <p>漱石大人留下的猫咪，惹人怜爱的样子令大家都难以抗拒……</p>
+                        </div>
+                    </div>
+                    <div class="gb-msg">
+                        <div class="gb-msg-header">
+                            <span class="gb-name">🦇 NottheReaper</span>
+                            <span class="gb-date">march 11, 2026</span>
+                        </div>
+                        <p>Miss Waggy, is it? One does occasionally find oneself scratched by her claws.</p>
+                        <button class="translate-btn" onclick="toggleTranslation(this)">🌐 翻译成中文</button>
+                        <div class="translated-text">
+                            <p>Miss.吾辈吗，偶尔也会有被它的利爪抓伤的时候啊。</p>
+                        </div>
+                    </div>
+                    <div class="gb-msg">
+                        <div class="gb-msg-header">
+                            <span class="gb-name">🐱 吾輩は猫である</span>
+                            <span class="gb-date">march 11, 2026</span>
+                        </div>
+                        <p>吾輩…吾輩の猫である！ふくよかにして堂々、毛並みは艶やか、気力は満ちあふれ、戦果また数知れず！そのうえ、あの死神にまで爪を立てたというではないか！！！かくも、かくも手厚いお世話……吾輩、「 恐 縮 至 極 」である！！！！</p>
+                        <button class="translate-btn" onclick="toggleTranslation(this)">🌐 翻译成中文</button>
+                        <div class="translated-text">
+                            <p>吾辈…吾辈的猫咪！膘肥体壮，油光水滑，神采奕奕，战果累累！还抓伤了那个死神！！！如此、如此好的照顾……吾辈千！恩！万！谢！</p>
+                        </div>
+                    </div>
+                    <div class="gb-msg">
+                        <div class="gb-msg-header">
+                            <span class="gb-name">🐕‍🦺 FutureStarOfScotlandYard</span>
+                            <span class="gb-date">march 12, 2026</span>
+                        </div>
+                        <p>Ain’ as clever as Deputy Sheriff Toby, o’ course, bu’ ’e’s a righ’ nice li’l cat all th’ same!</p>
+                        <button class="translate-btn" onclick="toggleTranslation(this)">🌐 翻译成中文</button>
+                        <div class="translated-text">
+                            <p>虽然比不上托比候补警长聪明，不过还是只不错的小猫呢！</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider-bottom"></div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span>✿ Iris wilson's personal blog ✿ made with love &amp; florae ✿</span>
+            <span>best viewed at 1024×768 · IE 6.0+ · ♡</span>
+        </div>
+    </footer>
+
+    <script src="Blog1.js"></script>
+</body>
+</html>
